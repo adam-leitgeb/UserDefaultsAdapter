@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "dependencyholder",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/adam-leitgeb/DependencyHolder",
+      "state" : {
+        "revision" : "11faae35622f4aa3723e1c1bdac5efd52fe2b615",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -65,6 +65,10 @@ public struct UserDefaultsAdapter: Dependency {
     // MARK: - Utilities
     
     private func generateKey<T>(for objectType: T.Type, customKey: String) -> String {
+        guard customKey.isEmpty else {
+            return customKey
+        }
+        
         var key = String(describing: type(of: self))
         key += "." + String(describing: objectType)
         key += customKey.isEmpty ? "" : ".\(customKey)"

@@ -5,9 +5,15 @@ public struct LegacyUserDefaultsAdapter {
 
     // MARK: - Properties
 
-    private let defaults: UserDefaults = .standard
+    private let defaults: UserDefaults
     private let encoder = JSONEncoder()
     private let decoder = JSONDecoder()
+
+    // MARK: - Object Lifecycle
+
+    public init(defaults: UserDefaults = .standard) {
+        self.defaults = defaults
+    }
 
     // MARK: - Actions
 

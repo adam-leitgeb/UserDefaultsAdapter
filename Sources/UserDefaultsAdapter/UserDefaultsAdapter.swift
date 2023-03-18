@@ -6,10 +6,9 @@
 //
 
 import Combine
-import DependencyHolder
 import Foundation
 
-public struct UserDefaultsAdapter: Dependency {
+public struct UserDefaultsAdapter {
         
     // MARK: - Properties
     
